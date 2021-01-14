@@ -24,7 +24,7 @@ class Printer {
     }
 
     public synchronized void print() {
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= documentNumber; i++) {
             System.out.println("document no: " + i + " thread name: " + Thread.currentThread().getName());
         }
     }
